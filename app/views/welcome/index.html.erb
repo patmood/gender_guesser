@@ -1,10 +1,4 @@
 <h1>Gender Guesser!</h1>
 <p>Enter a height and weight of a person below and I'll take a guess at the gender...</p>
 
-<%= form_tag("/guess", method: "get") do %>
-  <%= label_tag(:h, "Height (cms):") %>
-  <%= text_field_tag(:h) %>
-  <%= label_tag(:w, "Weight (kgs):") %>
-  <%= text_field_tag(:w) %>
-  <%= submit_tag("Search") %>
-<% end %>
+<%= render 'form' %>

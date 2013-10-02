@@ -1,0 +1,13 @@
+<%= form_tag("/guess", method: "get") do %>
+  <div>
+    <%= label_tag(:height, "Height (cms):") %>
+    <%= text_field_tag(:height) %>
+  </div>
+  <div>
+    <%= label_tag(:weight, "Weight (kgs):") %>
+    <%= text_field_tag(:weight) %>
+  </div>
+  <div>
+    <%= submit_tag("Guess!") %>
+  </div>
+<% end %>
